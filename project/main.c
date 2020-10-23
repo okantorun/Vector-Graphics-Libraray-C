@@ -43,7 +43,7 @@ int main(){
 	c.red=0;
 	c.blue=1;
 	c.green=1;
-    Point2D* centre=(Point2D*)malloc(sizeof(Point2D));
+    	Point2D* centre=(Point2D*)malloc(sizeof(Point2D));
 	Point2D* width_height=(Point2D*)malloc(sizeof(Point2D));
 	centre->x=20.0;
 	centre->y=20.0;
@@ -55,24 +55,24 @@ int main(){
 	set_thickness_resolution(fig4,1,0.5);
 	set_color(fig4,c);
 	draw_ellipse(fig4, centre, width_height);
-    export_eps(fig4,"draw_ellipse");
+    	export_eps(fig4,"draw_ellipse");
   
      /*******************************************************APPEND*/
-    c.red=1;
+    	c.red=1;
 	c.blue=0;
 	c.green=0;
-    fig5=(Figure*)malloc(sizeof(Figure));
-    fig5= start_figure(500,250);
-    set_thickness_resolution(fig5,1,0.5);
+   	fig5=(Figure*)malloc(sizeof(Figure));
+    	fig5= start_figure(500,250);
+    	set_thickness_resolution(fig5,1,0.5);
 	set_color(fig5,c);
-    draw_ellipse(fig5,centre,width_height);
+	draw_ellipse(fig5,centre,width_height);
      
 	append_figures(fig5,fig1);
 	export_eps(fig5,"append.eps");
 	/***************************************************************RESİZED_ELLİPSE*/
 	end_roi=(Point2D*)malloc(sizeof(Point2D));
-    start_roi=(Point2D*)malloc(sizeof(Point2D));
-    start_roi->x=-150;
+    	start_roi=(Point2D*)malloc(sizeof(Point2D));
+    	start_roi->x=-150;
 	start_roi->y=0;
 	end_roi->x=0;
 	end_roi->y=150;
