@@ -1,3 +1,2 @@
 # C_Project
-C programming with EPS format
-Two-dimensional vector drawings in EPS format with C programming language
+Drawing Two-dimensional(2D) vector graphics  with C programming in file format EPS
