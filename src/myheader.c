@@ -152,7 +152,6 @@ void export_eps(Figure * fig, char * file_name){
 	
 	
  	if(strcmp(file_name,"draw_polygon")==0){
- 		printf("okan");
 	 	traver=fig->point->nextp;
 	 	while(traver->nextp!=NULL){
 	 		fprintf(fp,"\n%.1f %.1f lineto",traver->x+fig->width/2.0,traver->y+fig->height/2.0);
@@ -162,7 +161,6 @@ void export_eps(Figure * fig, char * file_name){
 	 	fprintf(fp,"\nstroke\n");
  	}
  	else if(strcmp(file_name,"draw_polyline")==0){
- 		printf("okan\n");
 	 	traver=fig->point->nextp;
 	 	while(traver->nextp!=NULL){
 	 		fprintf(fp,"\n%.1f %.1f lineto",traver->x+fig->width/2.0,traver->y+fig->height/2.0);
