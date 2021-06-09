@@ -7,8 +7,15 @@ Mix of C and PostScript can produce a good geometric shape.It exactly proves tha
 ## Compiling and Running
 ```
 $ git clone https://github.com/okantorun/Vector-Graphics-Libraray-C.git
+
+```
+```
 $ cd .../Vector-Graphics-Libraray-C
+
+```
+```
 $ make
+
 ```
 ---
 
